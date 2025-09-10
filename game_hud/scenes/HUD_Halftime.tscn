@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwctp3ib4u4in"]
+
+[ext_resource type="Script" uid="uid://jmqegmrpxexi" path="res://game_hud/halftime_hud.gd" id="1_7id8q"]
+[ext_resource type="Theme" uid="uid://cji3sllgxv7xq" path="res://themes/popup_theme.tres" id="1_53gai"]
+[ext_resource type="Texture2D" uid="uid://d2c3r526gym56" path="res://assets/images/defaults/shield.png" id="3_r2f7r"]
+
+[node name="HUD_Halftime" type="Panel"]
+custom_minimum_size = Vector2(1000, 1200)
+offset_right = 1000.0
+offset_bottom = 1200.0
+theme = ExtResource("1_53gai")
+script = ExtResource("1_7id8q")
+
+[node name="hud_title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 100.0
+offset_right = 400.0
+offset_bottom = 174.0
+grow_horizontal = 2
+theme = ExtResource("1_53gai")
+theme_override_font_sizes/font_size = 100
+text = "Half Time"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 300.0
+offset_bottom = 872.0
+grow_horizontal = 2
+
+[node name="Shield1" type="TextureRect" parent="GridContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_r2f7r")
+
+[node name="Name1" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_53gai")
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 5
+text = "Team 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score1" type="Label" parent="GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_53gai")
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 5
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Shield2" type="TextureRect" parent="GridContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_r2f7r")
+
+[node name="Name2" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_53gai")
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 5
+text = "Team 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score2" type="Label" parent="GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_53gai")
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 5
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1

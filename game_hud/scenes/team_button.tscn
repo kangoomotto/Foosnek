@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy7suc4me1gfg"]
+
+[ext_resource type="Theme" uid="uid://cji3sllgxv7xq" path="res://themes/popup_theme.tres" id="1_4l3d0"]
+
+[node name="margin_container" type="MarginContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_4l3d0")
+
+[node name="team_button" type="Button" parent="."]
+layout_mode = 2
+mouse_filter = 1
+theme = ExtResource("1_4l3d0")
+text = "Team 1"

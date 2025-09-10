@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpsdrtsesbp0m"]
+
+[ext_resource type="Script" uid="uid://djmbpj1d5sctc" path="res://game_hud/hud_teams.gd" id="1_7ober"]
+[ext_resource type="PackedScene" uid="uid://cy7suc4me1gfg" path="res://game_hud/scenes/team_button.tscn" id="2_ip7ly"]
+[ext_resource type="Theme" uid="uid://cji3sllgxv7xq" path="res://themes/popup_theme.tres" id="3_fdgtf"]
+
+[node name="HUD_Teams" type="Control"]
+custom_minimum_size = Vector2(1000, 1400)
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -540.0
+offset_right = 460.0
+offset_bottom = 1400.0
+grow_horizontal = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+script = ExtResource("1_7ober")
+team_button_scene = ExtResource("2_ip7ly")
+
+[node name="start_texture" type="Panel" parent="."]
+custom_minimum_size = Vector2(1000, 1400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_fdgtf")
+
+[node name="PlayerTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -410.0
+offset_top = 100.0
+offset_right = 410.0
+offset_bottom = 174.0
+grow_horizontal = 2
+theme = ExtResource("3_fdgtf")
+text = "select your team"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btn_close" type="Button" parent="."]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -70.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("3_fdgtf")
+theme_override_font_sizes/font_size = 50
+text = "close"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.153
+anchor_right = 1.0
+anchor_bottom = 0.903
+offset_top = 125.8
+offset_bottom = 1.80005
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Grid" type="GridContainer" parent="ScrollContainer/MarginContainer"]
+custom_minimum_size = Vector2(0, 1000)
+layout_mode = 2
+size_flags_vertical = 0

@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://y5b8iqephgdb"]
+
+[ext_resource type="Theme" uid="uid://q01rgeqep6o0" path="res://themes/very_basic_theme.tres" id="1_3ufmk"]
+[ext_resource type="Script" uid="uid://cvmih2c4s6afw" path="res://game_hud/winner_screen.gd" id="2_hgo3g"]
+[ext_resource type="Texture2D" uid="uid://buplokkqwv631" path="res://assets/images/slot_cards/goal_01.png" id="3_k7uhr"]
+
+[node name="WinnerScreen" type="CenterContainer"]
+texture_filter = 1
+offset_right = 410.0
+offset_bottom = 318.0
+scale = Vector2(20, 20)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_3ufmk")
+script = ExtResource("2_hgo3g")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "GOL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_k7uhr")
+stretch_mode = 3
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "PLAY AGAIN!"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

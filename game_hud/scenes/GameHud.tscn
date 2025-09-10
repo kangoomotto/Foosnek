@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://0a47turok56b"]
+
+[ext_resource type="Script" uid="uid://bowgmcbb2c5ry" path="res://game_hud/game_hud.gd" id="1_7ioeu"]
+[ext_resource type="PackedScene" uid="uid://bd3i6lxjgj1h7" path="res://game_hud/scenes/HUD_Winner.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://cwctp3ib4u4in" path="res://game_hud/scenes/HUD_Halftime.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://cfuwhh4qgolps" path="res://game_hud/scenes/HUD_Score.tscn" id="7_nvku6"]
+[ext_resource type="PackedScene" uid="uid://sisur7efxxd7" path="res://game_hud/scenes/HUD_Quiz.tscn" id="7_qf28f"]
+[ext_resource type="PackedScene" uid="uid://owpiiw7abnr3" path="res://game_hud/scenes/HUD_Start.tscn" id="8_7ioeu"]
+[ext_resource type="PackedScene" uid="uid://neoqmihbois3" path="res://game_hud/scenes/HUD_Sudden_Death_Panel.tscn" id="8_na37g"]
+[ext_resource type="Script" uid="uid://goabkiudjcrg" path="res://scripts/popup_manager.gd" id="8_t84rj"]
+
+[node name="GameHud" type="CanvasLayer"]
+script = ExtResource("1_7ioeu")
+
+[node name="HUD_Winner" parent="." instance=ExtResource("4")]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -500.0
+offset_top = 300.0
+offset_right = 500.0
+offset_bottom = 1500.0
+grow_horizontal = 2
+
+[node name="HUD_Halftime" parent="." instance=ExtResource("5")]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -500.0
+offset_top = 300.0
+offset_right = 500.0
+offset_bottom = 1500.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+
+[node name="HUD_Sudden_Death_Panel" parent="." instance=ExtResource("8_na37g")]
+visible = false
+
+[node name="HUD_Quiz" parent="." instance=ExtResource("7_qf28f")]
+visible = false
+
+[node name="HUD_Start" parent="." instance=ExtResource("8_7ioeu")]
+visible = false
+offset_left = -500.0
+offset_top = 300.0
+offset_right = 500.0
+offset_bottom = 1700.0
+
+[node name="HUD_Score" parent="." instance=ExtResource("7_nvku6")]
+offset_top = 136.0
+offset_bottom = 336.0
+mouse_filter = 2
+
+[node name="HUD_PopupLayer" type="Node" parent="."]
+
+[node name="PopupManager" type="Node" parent="."]
+script = ExtResource("8_t84rj")

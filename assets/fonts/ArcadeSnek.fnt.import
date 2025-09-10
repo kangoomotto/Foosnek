@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://dkukrm1c3glv7"
+path="res://.godot/imported/ArcadeSnek.fnt-70f9f8358913e5d642a279c056b2dc12.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/ArcadeSnek.fnt"
+dest_files=["res://.godot/imported/ArcadeSnek.fnt-70f9f8358913e5d642a279c056b2dc12.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

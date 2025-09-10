@@ -1,0 +1,9 @@
+[gd_resource type="DynamicFont" load_steps=2 format=3]
+
+[ext_resource path="res://ARCADE.TTF" type="FontFile" id=1]
+
+[resource]
+size = 64
+font_data = ExtResource( 1 )
+antialiasing = 0
+hinting = 0

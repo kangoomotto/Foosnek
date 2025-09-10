@@ -1,0 +1,70 @@
+    GameHud
+      BoxInfoHUD
+        Icon
+        Label
+        HideTimer
+        ScoreLabel
+        ScoreLabel2
+        DiceNumber
+        PlayerTurnLabel
+          VBoxContainer
+            PlayerPhoto
+            Label
+                        ├── PlayerPhoto (TextureRect)
+                        ├── Label (Label)
+                    ├── VBoxContainer (VBoxContainer)
+        WinnerScreen
+          PanelContainer
+            VBoxContainer
+              Label
+              TextureRect
+              Button
+                            ├── Label (Label)
+                            ├── TextureRect (TextureRect)
+                            ├── Button (Button)
+                        ├── VBoxContainer (VBoxContainer)
+                    ├── PanelContainer (PanelContainer)
+        QuizUI
+          TextureRect
+          PanelContainer
+            MarginContainer
+              VBoxContainer
+                Label_Title
+                Label_Question
+                HBoxContainer
+                  Button_1
+                  Button_2
+                                    ├── Button_1 (Button)
+                                    ├── Button_2 (Button)
+                HBoxContainer2
+                  Button_3
+                  Button_4
+                                    ├── Button_3 (Button)
+                                    ├── Button_4 (Button)
+                                ├── Label_Title (Label)
+                                ├── Label_Question (Label)
+                                ├── HBoxContainer (HBoxContainer)
+                                ├── HBoxContainer2 (HBoxContainer)
+                            ├── VBoxContainer (VBoxContainer)
+                        ├── MarginContainer (MarginContainer)
+                    ├── TextureRect (TextureRect)
+                    ├── PanelContainer (PanelContainer)
+                ├── Icon (TextureRect)
+                ├── Label (Label)
+                ├── HideTimer (Timer)
+                ├── ScoreLabel (Label)
+                ├── ScoreLabel2 (Label)
+                ├── DiceNumber (Label)
+                ├── PlayerTurnLabel (Container)
+                ├── WinnerScreen (CenterContainer)
+                ├── QuizUI (CenterContainer)
+      Goal_Popup
+        Goal_Control
+          Goal_Image
+          Goal_Label
+                    ├── Goal_Image (TextureRect)
+                    ├── Goal_Label (Label)
+                ├── Goal_Control (Control)
+            ├── BoxInfoHUD (Control)
+            ├── Goal_Popup (CanvasLayer)
+    

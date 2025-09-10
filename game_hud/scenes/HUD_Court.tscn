@@ -1,0 +1,129 @@
+[gd_scene load_steps=4 format=3 uid="uid://o110sg6yyf2"]
+
+[ext_resource type="Script" uid="uid://cryrxg24puwh6" path="res://game_hud/hud_court.gd" id="1_gfo72"]
+[ext_resource type="FontFile" uid="uid://csn3d5380e32l" path="res://assets/fonts/PixeloidSans-Bold.ttf" id="2_x6jf3"]
+[ext_resource type="Theme" uid="uid://cji3sllgxv7xq" path="res://themes/popup_theme.tres" id="3_gyo8y"]
+
+[node name="HUD_Court" type="Control"]
+custom_minimum_size = Vector2(1000, 1400)
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -540.0
+offset_right = 460.0
+offset_bottom = 1400.0
+grow_horizontal = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+script = ExtResource("1_gfo72")
+
+[node name="BoardLayout" type="Panel" parent="."]
+custom_minimum_size = Vector2(1000, 1400)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -500.0
+offset_right = 500.0
+offset_bottom = 1400.0
+grow_horizontal = 2
+theme = ExtResource("3_gyo8y")
+
+[node name="OptionsTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -410.0
+offset_top = 100.0
+offset_right = 410.0
+offset_bottom = 174.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -5
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 20
+theme_override_constants/outline_size = 25
+theme_override_constants/shadow_outline_size = 25
+theme_override_fonts/font = ExtResource("2_x6jf3")
+theme_override_font_sizes/font_size = 60
+text = "select your court:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btn_close" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -70.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("3_gyo8y")
+theme_override_font_sizes/font_size = 50
+text = "close"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.286
+anchor_right = 1.0
+anchor_bottom = 0.587
+offset_top = -0.400024
+offset_bottom = -0.425049
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Grid" type="GridContainer" parent="ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MC1" type="MarginContainer" parent="ScrollContainer/MarginContainer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("3_gyo8y")
+
+[node name="btn_mode_1" type="Button" parent="ScrollContainer/MarginContainer/Grid/MC1"]
+layout_mode = 2
+mouse_filter = 1
+theme = ExtResource("3_gyo8y")
+text = "Stadium"
+
+[node name="MC2" type="MarginContainer" parent="ScrollContainer/MarginContainer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("3_gyo8y")
+
+[node name="btn_mode_2" type="Button" parent="ScrollContainer/MarginContainer/Grid/MC2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_filter = 1
+mouse_force_pass_scroll_events = false
+theme = ExtResource("3_gyo8y")
+text = "Street"
+
+[node name="MC3" type="MarginContainer" parent="ScrollContainer/MarginContainer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("3_gyo8y")
+
+[node name="btn_mode_3" type="Button" parent="ScrollContainer/MarginContainer/Grid/MC3"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+mouse_force_pass_scroll_events = false
+theme = ExtResource("3_gyo8y")
+text = "Beach"

@@ -1,0 +1,248 @@
+{
+  "players": [
+    {
+      "question": "¿Quién es el máximo goleador en la historia de la Copa del Mundo?",
+      "answers": [
+        "Miroslav Klose",
+        "Pelé",
+        "Cristiano Ronaldo",
+        "Messi",
+        "Gerd Müller",
+        "Just Fontaine"
+      ],
+      "answer_image": "answer_01.png",
+      "category": "players"
+    },
+    {
+      "question": "¿Qué jugador ha ganado más Balones de Oro?",
+      "answers": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Michel Platini",
+        "Johan Cruyff",
+        "Marco van Basten",
+        "Zinedine Zidane"
+      ],
+      "answer_image": "answer_02.png",
+      "category": "players"
+    },
+    {
+      "question": "¿Quién es conocido como 'El Fenómeno'?",
+      "answers": [
+        "Ronaldo Nazário",
+        "Ronaldinho",
+        "Romário",
+        "Neymar",
+        "Pelé",
+        "Kaká"
+      ],
+      "answer_image": "answer_03.png",
+      "category": "players"
+    }
+  ],
+  "world_cup": [
+    {
+      "question": "¿Qué país ha ganado más Copas del Mundo?",
+      "answers": [
+        "Brasil",
+        "Alemania",
+        "Italia",
+        "Francia",
+        "Argentina",
+        "Uruguay"
+      ],
+      "answer_image": "answer_01.png",
+      "category": "world_cup"
+    },
+    {
+      "question": "¿En qué año se celebró el primer Mundial de fútbol?",
+      "answers": [
+        "1930",
+        "1934",
+        "1928",
+        "1942",
+        "1950",
+        "1910"
+      ],
+      "answer_image": "answer_02.png",
+      "category": "world_cup"
+    },
+    {
+      "question": "¿Qué selección ganó el Mundial de 2010?",
+      "answers": [
+        "España",
+        "Países Bajos",
+        "Alemania",
+        "Brasil",
+        "Francia",
+        "Argentina"
+      ],
+      "answer_image": "answer_03.png",
+      "category": "world_cup"
+    }
+  ],
+  "leagues": [
+    {
+      "question": "¿Qué liga es conocida como 'La Liga'?",
+      "answers": [
+        "España",
+        "Italia",
+        "Inglaterra",
+        "Alemania",
+        "Francia",
+        "Portugal"
+      ],
+      "answer_image": "answer_01.png",
+      "category": "leagues"
+    },
+    {
+      "question": "¿Qué club ha ganado más títulos de la Premier League?",
+      "answers": [
+        "Manchester United",
+        "Chelsea",
+        "Liverpool",
+        "Arsenal",
+        "Manchester City",
+        "Tottenham"
+      ],
+      "answer_image": "answer_02.png",
+      "category": "leagues"
+    },
+    {
+      "question": "¿Qué liga es famosa por el Clásico entre Boca y River?",
+      "answers": [
+        "Argentina",
+        "Brasil",
+        "México",
+        "Chile",
+        "Colombia",
+        "Uruguay"
+      ],
+      "answer_image": "answer_03.png",
+      "category": "leagues"
+    }
+  ],
+  "coaches": [
+    {
+      "question": "¿Quién es el entrenador con más títulos de la UEFA Champions League?",
+      "answers": [
+        "Carlo Ancelotti",
+        "Zinedine Zidane",
+        "Pep Guardiola",
+        "Alex Ferguson",
+        "José Mourinho",
+        "Vicente del Bosque"
+      ],
+      "answer_image": "answer_01.png",
+      "category": "coaches"
+    },
+    {
+      "question": "¿Quién dirigió a España en su victoria en el Mundial 2010?",
+      "answers": [
+        "Vicente del Bosque",
+        "Luis Aragonés",
+        "Julen Lopetegui",
+        "Luis Enrique",
+        "José Antonio Camacho",
+        "Rafael Benítez"
+      ],
+      "answer_image": "answer_02.png",
+      "category": "coaches"
+    },
+    {
+      "question": "¿Qué entrenador es famoso por su etapa en el Arsenal y por promover el fútbol ofensivo?",
+      "answers": [
+        "Arsène Wenger",
+        "Alex Ferguson",
+        "José Mourinho",
+        "Jurgen Klopp",
+        "Marcelo Bielsa",
+        "Frank Rijkaard"
+      ],
+      "answer_image": "answer_03.png",
+      "category": "coaches"
+    }
+  ],
+  "soccer_rules": [
+    {
+      "question": "¿Cuántos jugadores por equipo deben estar en el campo al inicio?",
+      "answers": [
+        "11",
+        "10",
+        "12",
+        "9",
+        "13",
+        "8"
+      ],
+      "answer_image": "answer_01.png",
+      "category": "soccer_rules"
+    },
+    {
+      "question": "¿Qué significa una tarjeta roja?",
+      "answers": [
+        "Expulsión inmediata",
+        "Advertencia",
+        "Falta leve",
+        "Reinicio de juego",
+        "Penalti",
+        "Fuera de juego"
+      ],
+      "answer_image": "answer_02.png",
+      "category": "soccer_rules"
+    },
+    {
+      "question": "¿Cuánto dura un partido de fútbol profesional?",
+      "answers": [
+        "90 minutos",
+        "80 minutos",
+        "60 minutos",
+        "100 minutos",
+        "75 minutos",
+        "120 minutos"
+      ],
+      "answer_image": "answer_03.png",
+      "category": "soccer_rules"
+    }
+  ],
+  "aficionados": [
+    {
+      "question": "¿Cómo se le llama a los aficionados más apasionados del fútbol?",
+      "answers": [
+        "Ultras",
+        "Hinchas",
+        "Fans",
+        "Forofos",
+        "Simpatizantes",
+        "Socios"
+      ],
+      "answer_image": "answer_01.png",
+      "category": "aficionados"
+    },
+    {
+      "question": "¿Qué país es conocido por su fervor futbolero y el uso de bombos en los estadios?",
+      "answers": [
+        "Argentina",
+        "Brasil",
+        "México",
+        "Chile",
+        "Italia",
+        "España"
+      ],
+      "answer_image": "answer_02.png",
+      "category": "aficionados"
+    },
+    {
+      "question": "¿Qué es una barra brava?",
+      "answers": [
+        "Porra de radicales",
+        "Tienda de merchandising",
+        "Nombre de un equipo",
+        "Tipo de penalti",
+        "Estadio de fútbol",
+        "Jugador estrella"
+      ],
+      "answer_image": "answer_03.png",
+      "category": "aficionados"
+    }
+  ]
+}

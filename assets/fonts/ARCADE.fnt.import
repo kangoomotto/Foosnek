@@ -1,0 +1,16 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://2givq4bgjvp8"
+valid=false
+
+[deps]
+
+source_file="res://assets/fonts/ARCADE.fnt"
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

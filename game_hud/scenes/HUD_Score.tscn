@@ -1,0 +1,104 @@
+[gd_scene load_steps=10 format=3 uid="uid://cfuwhh4qgolps"]
+
+[ext_resource type="Script" uid="uid://ctacebenpsrid" path="res://game_hud/hud_score.gd" id="1_rr63v"]
+[ext_resource type="Texture2D" uid="uid://d2c3r526gym56" path="res://assets/images/defaults/shield.png" id="2_5ag4x"]
+[ext_resource type="FontFile" uid="uid://do3s6h3n5dd43" path="res://assets/fonts/Soccer Scoreboard.otf" id="2_rr63v"]
+[ext_resource type="Texture2D" uid="uid://cqax7035g0xma" path="res://assets/images/flare/glow01.png" id="3_bki21"]
+[ext_resource type="Texture2D" uid="uid://dyk66k4cmpvgt" path="res://assets/images/flare/glow02.png" id="4_7f8vc"]
+[ext_resource type="PackedScene" uid="uid://ybgx6eftiul3" path="res://game_hud/scenes/HUD_Timer.tscn" id="4_emhmn"]
+[ext_resource type="Texture2D" uid="uid://bwv5i6it0xt0h" path="res://assets/images/flare/glow03.png" id="5_74lsf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gdpn7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fp750"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_7f8vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bki21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_74lsf")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 6.0
+}]
+
+[node name="HUD_Score" type="Panel"]
+custom_minimum_size = Vector2(1080, 200)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_gdpn7")
+script = ExtResource("1_rr63v")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -522.0
+offset_right = 518.0
+offset_bottom = 192.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Shield_1" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_5ag4x")
+
+[node name="Highlight_1" type="AnimatedSprite2D" parent="HBoxContainer/Shield_1"]
+z_index = -1
+position = Vector2(93, 100)
+sprite_frames = SubResource("SpriteFrames_fp750")
+animation = &"new_animation"
+frame = 1
+frame_progress = 0.913171
+
+[node name="ScoreLabel_Left" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_rr63v")
+theme_override_font_sizes/font_size = 100
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_Timer" parent="HBoxContainer" instance=ExtResource("4_emhmn")]
+custom_minimum_size = Vector2(280, 80)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="ScoreLabel_Right" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_rr63v")
+theme_override_font_sizes/font_size = 100
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Shield_2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_5ag4x")
+
+[node name="Highlight_2" type="AnimatedSprite2D" parent="HBoxContainer/Shield_2"]
+z_index = -1
+position = Vector2(93, 100)
+sprite_frames = SubResource("SpriteFrames_fp750")
+animation = &"new_animation"
